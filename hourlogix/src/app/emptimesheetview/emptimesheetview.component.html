@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Timesheets</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+        }
+
+        h1 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom, #bfb5f9, #f5f5f5);
+            color: black;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>All employee timesheets</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>emp-name</th>
+                    <th>date</th>
+                    <th>time-in</th>
+                    <th>time-out</th>
+                    <th>total-time</th>
+                    <th>PTO request</th>
+                    <th>PTO balances</th>
+                    <th>total times</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>11022023</td>
+                    <td>0900</td>
+                    <td>1730</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>11022023</td>
+                    <td>0700</td>
+                    <td>1500</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>11022023</td>
+                    <td>0800</td>
+                    <td>1630</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>11022023</td>
+                    <td>0830</td>
+                    <td>1730</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

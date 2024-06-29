@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="card">
+      <h2>Filter by status</h2>
+      <div class="card flex justify-content-center">
+          <div class="flex flex-column gap-2">
+            <form [formGroup]="filterForm">
+                <select formControlName="status">
+                  <option value="pending">Filter</option>
+                  <option value="approved">Approved</option>
+                  <option value="pending">Pending</option>
+                  <option value="denied">Denied</option>
+                </select>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <h2>Approve Time</h2>
+      <div class="mb-3">
+      </div>
+      <p-table [value]="leaveRequests" class="p-datatable p-component p-datatable-striped">
+          <ng-template pTemplate="header">
+              <tr>
+                  <th>Employee ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Available Sick Leave</th>
+                  <th>Available Annual Leave</th>
+                  <th>Email</th>
+                  <th>Available Leave</th>
+                  <th>Reason</th>
+                  <th>Hours of Leave Requested</th>
+                  <th>Type of Leave</th>
+                  <th>Leave Start Date</th>
+                  <th>Leave End Date</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-approveTime>
+              <tr>
+                  <td>{{ approveTime.employeeId }}</td>
+                  <td>{{ approveTime.firstName }}</td>
+                  <td>{{ approveTime.lastName }}</td>
+                  <td>{{ approveTime.availableSickLv }}</td>
+                  <td>{{ approveTime.availableAnnualLv }}</td>
+                  <td>{{ approveTime.email }}</td>
+                  <td>{{ approveTime.availableLv }}</td>
+                  <td>{{ approveTime.reason }}</td>
+                  <td>{{ approveTime.hoursOfLvRequested }}</td>
+                  <td>{{ approveTime.typeofLv }}</td>
+                  <td>{{ approveTime.lvStartDate }}</td>
+                  <td>{{ approveTime.lvEndDate }}</td>
+                  <td>{{ approveTime.status }}</td>
+                  <td>
+                    <p-button icon="pi pi-check" class="mr-2" (click)="updateStatus(approveTime, 'Approved')" pTooltip="Approve" tooltipPosition="top"></p-button>
+        
+                    <p-button icon="pi pi-times" class="mr-2" (click)="updateStatus(approveTime, 'Denied')" pTooltip="Deny" tooltipPosition="top"></p-button>
+                    
+              </tr>
+          </ng-template>
+      </p-table>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+
+<a href="return to timesheets page">Back</a>
+<h2>Logged in user</h2>
+<h3>Enter time:</h3>
+
+<div><button id="pto" type="button"> Available PTO</button></div>
+<small>GET request for available PTO</small>
+
+
+<div>
+  <form [formGroup]="logHours" *ngIf="showForm" (ngSubmit)="onSubmit()">
+    <label for="emp-id">ID: </label>
+    <input id="emp-id" type="text" formControlName="empId" placeholder="logged users ID">
+
+    <label for="start-date">Start Date: </label>
+    <input id="start-date" type="date" formControlName="startDate" placeholder="Start Date">
+    <div *ngIf="logHours.hasError('startDateBeforeEndDate') && logHours.get('startDate')?.touched">
+      <small class="error">Start date must be before end date.</small>
+    </div>
+
+    <label for="end-date">End Date: </label>
+    <input id="end-date" type="date" formControlName="endDate" placeholder="End Date">
+    <div *ngIf="logHours.hasError('startDateBeforeEndDate') && logHours.get('endDate')?.touched">
+      <small class="error">End date must be after start date.</small>
+    </div>
+
+    <label for="time-in">Start Time: </label>
+    <input id="time-in" type="time" formControlName="timeIn" placeholder="Enter Time">
+    <div *ngIf="logHours.hasError('startTimeBeforeEndTime') && logHours.get('timeIn')?.touched">
+      <small class="error">Start time must be before end time.</small>
+    </div>
+
+    <label for="time-out">End Time: </label>
+    <input id="time-out" type="time" formControlName="timeOut" placeholder="Enter Time">
+    <div *ngIf="logHours.hasError('startTimeBeforeEndTime') && logHours.get('timeOut')?.touched">
+      <small class="error">End time must be after start time.</small>
+    </div>
+
+    <label for="total-hours">Total Hours: </label>
+    <input id="total-hours" type="number" formControlName="totalHours" placeholder="Daily Total">
+
+    <button (click)="addNewFormGroup()" type="button">Add Entry</button>
+    <div formArrayName="addEntry">
+      <div *ngFor="let control of addEntry.controls; let i = index" [formGroupName]="i">
+        <label for="emp-id-{{i}}">ID: </label>
+        <input id="emp-id-{{i}}" type="text" formControlName="empId" placeholder="logged users ID">
+
+        <label for="start-date-{{i}}">Start Date: </label>
+        <input id="start-date-{{i}}" type="date" formControlName="startDate" placeholder="Start Date">
+        <div *ngIf="control.hasError('startDateBeforeEndDate') && control.get('startDate')?.touched">
+          <small class="error">Start date must be before end date.</small>
+        </div>
+
+        <label for="end-date-{{i}}">End Date: </label>
+        <input id="end-date-{{i}}" type="date" formControlName="endDate" placeholder="End Date">
+        <div *ngIf="control.hasError('startDateBeforeEndDate') && control.get('endDate')?.touched">
+          <small class="error">End date must be after start date.</small>
+        </div>
+
+        <label for="time-in-{{i}}">Start Time: </label>
+        <input id="time-in-{{i}}" type="time" formControlName="timeIn" placeholder="Enter Start Time">
+        <div *ngIf="control.hasError('startTimeBeforeEndTime') && control.get('timeIn')?.touched">
+          <small class="error">Start time must be before end time.</small>
+        </div>
+
+        <label for="time-out-{{i}}">End Time: </label>
+        <input id="time-out-{{i}}" type="time" formControlName="timeOut" placeholder="Enter End Time">
+        <div *ngIf="control.hasError('startTimeBeforeEndTime') && control.get('timeOut')?.touched">
+          <small class="error">End time must be after start time.</small>
+        </div>
+
+        <label for="total-hours-{{i}}">Total Hours: </label>
+        <input id="total-hours-{{i}}" type="number" formControlName="totalHours" placeholder="Daily Total">
+
+        <button type="button" class="delete-button" (click)="removeFormGroup(i)">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </div>
+    <button type="submit">Submit Hours</button>
+    <small>pop modal confirmation with okay button that returns to timesheets page</small>
+  </form>
+</div>
+
+<pre>{{logHours.value | json}}</pre>
+
+

@@ -1,0 +1,123 @@
+{"Paystubs": [
+    {
+        "id": 1,
+        "employee": {
+            "id": "1",
+            "name": "Steve Wozniak",
+            "address": "Apple Lane",
+            "phone": "8675309",
+            "ssn_last4": "4321",
+            "job_title": "cofounder",
+            "hourly_pay": "NaN"
+        },
+        "employer": {
+            "name": "hourlogix",
+            "address": "1 Penn Plaza",
+            "phone": "212-999-9999"
+        },
+        "pay_info": {
+            "employee_id": "1",
+            "beginning_date": "2023-04-16",
+            "end_date": "2023-04-30",
+            "pay_date": "2023-05-01",
+            "hours_worked": "40",
+            "hourly_pay": "NaN",
+            "check_amount": "calc",
+            "taxes": "calc",
+            "gross_pay": "calc",
+            "total_deductions": "calc",
+            "net_pay": "calc",
+            "ytd_gross_pay": "calc",
+            "ytd_deductions": "calc",
+            "ytd_net_pay": "calc"
+        },
+        "time_off_info": {
+            "employee_id": "1",
+            "total_sick_hours": "900",
+            "total_vacation_hours": "1,000,000",
+            "sick_hours_earned_this_period": "0",
+            "vacation_hours_earned_this_period": "0"
+        }
+    },
+    {
+        "id": 2,
+        "employee": {
+            "id": "1",
+            "name": "Steve Wozniak",
+            "address": "Apple Lane",
+            "phone": "8675309",
+            "ssn_last4": "4321",
+            "job_title": "cofounder",
+            "hourly_pay": "NaN"
+        },
+        "employer": {
+            "name": "hourlogix",
+            "address": "1 Penn Plaza",
+            "phone": "212-999-9999"
+        },
+        "pay_info": {
+            "employee_id": "1",
+            "beginning_date": "2023-04-16",
+            "end_date": "2023-04-30",
+            "pay_date": "2023-05-01",
+            "hours_worked": "40",
+            "hourly_pay": "NaN",
+            "check_amount": "calc",
+            "taxes": "calc",
+            "gross_pay": "calc",
+            "total_deductions": "calc",
+            "net_pay": "calc",
+            "ytd_gross_pay": "calc",
+            "ytd_deductions": "calc",
+            "ytd_net_pay": "calc"
+        },
+        "time_off_info": {
+            "employee_id": "1",
+            "total_sick_hours": "900",
+            "total_vacation_hours": "1,000,000",
+            "sick_hours_earned_this_period": "0",
+            "vacation_hours_earned_this_period": "0"
+        }
+    },
+    {
+        "id": 3,
+        "employee": {
+            "id": "1",
+            "name": "Steve Wozniak",
+            "address": "Apple Lane",
+            "phone": "8675309",
+            "ssn_last4": "4321",
+            "job_title": "cofounder",
+            "hourly_pay": "NaN"
+        },
+        "employer": {
+            "name": "hourlogix",
+            "address": "1 Penn Plaza",
+            "phone": "212-999-9999"
+        },
+        "pay_info": {
+            "employee_id": "1",
+            "beginning_date": "2023-04-16",
+            "end_date": "2023-04-30",
+            "pay_date": "2023-05-01",
+            "hours_worked": "40",
+            "hourly_pay": "NaN",
+            "check_amount": "calc",
+            "taxes": "calc",
+            "gross_pay": "calc",
+            "total_deductions": "calc",
+            "net_pay": "calc",
+            "ytd_gross_pay": "calc",
+            "ytd_deductions": "calc",
+            "ytd_net_pay": "calc"
+        },
+        "time_off_info": {
+            "employee_id": "1",
+            "total_sick_hours": "900",
+            "total_vacation_hours": "1,000,000",
+            "sick_hours_earned_this_period": "0",
+            "vacation_hours_earned_this_period": "0"
+        }
+    }
+
+]}

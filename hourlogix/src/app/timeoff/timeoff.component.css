@@ -1,0 +1,85 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button .top {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    margin-left: 20px;
+}
+.card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1rem;
+  }
+  
+  .employee-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    h2 {
+      margin: 0;
+    }
+  
+    p {
+      margin: 0.5rem 0;
+      color: #666;
+    }
+  
+    button {
+      margin-top: 1rem;
+    }
+  }
+  
+  .p-dialog .p-fluid .field {
+    margin-bottom: 1rem;
+  }
+   */
+
+   .leave-summary {
+    margin-bottom: 20px;
+  }
+  
+  .leave-card {
+    text-align: center;
+  }
+  
+  .leave-hours {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .employee-info {
+    margin-bottom: 20px;
+  }
+  
+  .employee-name {
+    margin-bottom: 5px;
+  }
+  

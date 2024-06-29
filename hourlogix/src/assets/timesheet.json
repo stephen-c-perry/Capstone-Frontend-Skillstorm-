@@ -1,0 +1,11 @@
+[
+    {
+      "empId": "001",
+      "startDate": "06-10-2024",
+      "timeIn": "08:00:00",
+      "timeOut": "16:00:00",
+      "endDate": "06-10-2024",
+      "type": "Regular",
+      "total_hrs": 8
+    }
+]

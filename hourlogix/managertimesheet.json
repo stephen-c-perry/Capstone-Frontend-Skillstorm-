@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "employeeName": "John Doe",
+      "ptoTimeAccrued": 47,
+      "totalHours": 180,
+      "pendingApproved": 10
+    },
+    {
+      "employeeName": "Jane Smith",
+      "ptoTimeAccrued": 12,
+      "totalHours": 120,
+      "pendingApproved": 5
+    },
+    {
+      "employeeName": "Emily Johnson",
+      "ptoTimeAccrued": 32,
+      "totalHours": 145,
+      "pendingApproved": 10
+    },
+    {
+      "employeeName": "Michael Brown",
+      "ptoTimeAccrued": 17,
+      "totalHours": 162,
+      "pendingApproved": 17
+    }
+  ]
+}

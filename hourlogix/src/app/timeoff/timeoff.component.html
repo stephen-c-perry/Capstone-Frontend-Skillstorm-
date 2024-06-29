@@ -1,0 +1,107 @@
+<h1>request time off</h1>
+<!-- <div>
+  <button class="top">
+    Available Sick Leave <br />
+    2hrs
+  </button>
+  <button class="top">
+    Available Annual leave <br />
+    10hrs
+  </button>
+ </div>
+<div class="container">
+  <div class="card">
+    <h2>Request Time Off</h2>
+  </div>
+</div> 
+<p-toast></p-toast>
+
+<div class="card">
+  <div class="employee-info">
+    <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
+    <p>{{ employee.email }}</p>
+    <button pButton label="Request Leave" icon="pi pi-plus" class="p-button-success" (click)="openNew()"></button>
+  </div>
+</div>
+
+<p-dialog [(visible)]="timeOffDialog" [style]="{width: '450px'}" header="Request Leave" [modal]="true" styleClass="p-fluid">
+  <ng-template pTemplate="content">
+    <div class="field">
+      <label for="reason">Reason</label>
+      <input type="text" pInputText id="reason" [(ngModel)]="timeOff" required />
+    </div>
+    <div class="field">
+      <label for="typeofLv">Type of Leave</label>
+      <p-dropdown [options]="leaveTypes" [(ngModel)]="timeOff" placeholder="Select Type of Leave"></p-dropdown>
+    </div>
+    <div class="field">
+      <label for="lvStartDate">Start Date</label>
+      <p-calendar id="lvStartDate" [(ngModel)]="timeOff" dateFormat="yy-mm-dd"></p-calendar>
+    </div>
+    <div class="field">
+      <label for="lvEndDate">End Date</label>
+      <p-calendar id="lvEndDate" [(ngModel)]="timeOff" dateFormat="yy-mm-dd"></p-calendar>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <button pButton label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+    <button pButton label="Submit" icon="pi pi-check" class="p-button-text" (click)="submitRequest()"></button>
+  </ng-template>
+</p-dialog> -->
+<!-- <div class="leave-summary p-grid p-justify-around p-align-center">
+  <div class="p-col-12 p-md-5">
+    <p-card header="Available Sick Leave" styleClass="leave-card">
+      <p-card>
+        <div class="leave-hours">2 hrs</div>
+      </p-card>
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-5">
+    <p-card header="Available Annual Leave" styleClass="leave-card">
+      <p-card>
+        <div class="leave-hours">10 hrs</div>
+      </p-card>
+    </p-card>
+  </div>
+</div>
+
+<p-toast></p-toast>
+
+<div class="card">
+  <div class="p-grid p-justify-between p-align-center">
+    <div class="p-col-12 p-md-8">
+      <h2 class="employee-name">Hello</h2>
+      <p class="employee-email">{{ employee?.email }}</p>
+    </div>
+    <div class="p-col-12 p-md-4 p-text-right">
+      <button pButton label="Request Leave" icon="pi pi-plus" class="p-button-success" (click)="openNew()"></button>
+    </div>
+  </div>
+</div>
+
+<p-dialog [(visible)]="timeOffDialog" [style]="{ width: '450px' }" header="Request Leave" [modal]="true" styleClass="p-fluid">
+  <ng-template pTemplate="content">
+    <form [formGroup]="timeOffForm">
+      <div class="p-field">
+        <label for="reason">Reason</label>
+        <input type="text" pInputText id="reason" formControlName="reason" required />
+      </div>
+      <div class="p-field">
+        <label for="typeofLv">Type of Leave</label>
+        <p-dropdown id="typeofLv" [options]="leaveTypes" formControlName="typeOfLv" placeholder="Select Type of Leave"></p-dropdown>
+      </div>
+      <div class="p-field">
+        <label for="lvStartDate">Start Date</label>
+        <p-calendar id="lvStartDate" formControlName="lvStartDate" dateFormat="yy-mm-dd"></p-calendar>
+      </div>
+      <div class="p-field">
+        <label for="lvEndDate">End Date</label>
+        <p-calendar id="lvEndDate" formControlName="lvEndDate" dateFormat="yy-mm-dd"></p-calendar>
+      </div>
+    </form>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <button pButton label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+    <button pButton label="Submit" icon="pi pi-check" class="p-button-text" (click)="submitRequest()"></button>
+  </ng-template>
+</p-dialog> -->

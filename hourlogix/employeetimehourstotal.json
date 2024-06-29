@@ -1,0 +1,35 @@
+{
+  "employees": [
+    {
+      "emp-name": "John Doe",
+      "date": "2024-06-10",
+      "time-in": "08:00",
+      "time-out": "17:00",
+      "total-hours": 9
+    },
+    {
+      "emp-name": "Jane Smith",
+      "date": "2024-06-10",
+      "time-in": "09:00",
+      "time-out": "18:00",
+      "total-hours": 9
+    },
+    {
+      "emp-name": "Emily Johnson",
+      "date": "2024-06-10",
+      "time-in": "07:30",
+      "time-out": "16:30",
+      "total-hours": 9
+    },
+    {
+      "emp-name": "Michael Brown",
+      "date": "2024-06-10",
+      "time-in": "08:30",
+      "time-out": "17:30",
+      "total-hours": 9
+    }
+  ],
+  "totals": {
+    "total-hours": 36
+  }
+}

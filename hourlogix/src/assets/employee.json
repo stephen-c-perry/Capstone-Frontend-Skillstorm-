@@ -1,0 +1,11 @@
+
+[
+    {
+      "emp_id": "E001",
+      "name": "John Doe",
+      "role": "Developer",
+      "rate_hr": 50,
+      "vacation_hrs": 80,
+      "sick_leave": 40
+    }
+]

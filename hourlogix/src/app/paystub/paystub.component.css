@@ -1,0 +1,28 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: white;
+}
+
+table tbody tr:hover {
+  color:black;
+  background-color: rgb(203, 195, 230);
+  
+}

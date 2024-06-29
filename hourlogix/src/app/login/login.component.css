@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Subtract the estimated height of header and footer */
+  }
+
+  app-header, app-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Set a specific height for header and footer */
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 4px white(0, 0, 0, 0.1);
+  }
+
+  .login-container {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: darkred;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #a00000; /* Slightly lighter shade for hover effect */
+  }
